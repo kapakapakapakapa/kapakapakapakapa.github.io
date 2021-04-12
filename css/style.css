@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,100&display=swap')
+
+*{ /*Убираем все отступы*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	background-color: #808080;
+	flex-direction: column; 
+	height: 100%;
+	align-items: stretch; 
+	padding-left: 5%; /*Отступы*/
+	padding-right: 5%;
+}
+
+.page1-container{
+	font-family: 'Exo 2';
+	display: flex;
+	flex-direction: column; 
+	height: 100%;
+	align-items: stretch; 
+	padding-left: 5%; /*Отступы*/
+	padding-right: 5%;
+}
+
+.page2-container{
+	width: 70%;
+	margin: auto; /*Размещаем div по центру*/
+	background-color: white;
+	margin-top: 5px; /*Отступ сверху*/
+	border-radius: 25px; /*Скругленные края*/
+	box-shadow: #cdc9c3 1px 1px 2px;
+	padding: 30px;
+}
+
+.header{
+	height: 350px; /*Высота*/
+	background-image: url(../img/klass.jpg); /*Заполняем контейнер картинкой*/
+	background-size: cover;
+	text-align: center; /*Текст по центру*/
+}
+
+.header1{
+	height: 450px;
+	background-image: url(../img/mo.jpg);
+	background-size: cover; /*Размер картинки*/
+	background-repeat: no-repeat; /*Повторение картинки*/
+}
+
+.header a{
+	text-decoration: none;
+	display: block;
+	margin: 0 auto; 
+	background-color: #c7956d;
+	padding: 20px;
+	width: 400px;
+	border-radius:  16px;
+	text-align: center; 
+	font-family: 'Exo 2'; 
+	color: white; 
+	letter-spacing: 2px; 
+	margin-bottom: 20px; 
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.header p{
+	font-family: 'Exo 2';
+	color: white;
+	font-size: 30px;
+}
+
+.header h1{
+	font-family: 'Exo 2';
+	color: white;
+}
+
+/*------------------------------Секция ABOUT--------------------*/
+.about{
+	background-color: #696969; /*Цвет фона*/
+	padding: 55px; /*Внутренние отступы*/
+	text-align: justify; /*Выравнивание текста*/
+	line-height: 23px; /*Расстояние между строками текста*/
+}
+
+.about p{
+	font-family: 'Exo 2';
+	color: white;
+}
+
+.about img{
+	float: left; /*Расположение карнтики слева*/
+	height: 250px; /*Высота картинки*/
+	margin: 25px; /*Внешние отступы*/
+}
+
+.about h2, .page2-about h2, .form-container h2{
+	font-family: 'Exo 2'; /*Шрифт*/
+	font-size: 30px; /*Размер шрифта*/
+	color: #c7956d; /*Цвет текста*/
+	margin-bottom: 10px; /*Отступ снизу*/
+}
+/*--------------------------Grid*/
+.grid{
+	display: flex;
+	flex-direction: row; 
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.grid-item{
+	flex-direction: column;
+	width: 275px;
+	background-color: #808080;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); /*Тень*/
+	border-radius: 2px; 
+	margin: 20px; 
+}
+
+
+.grid-img{
+	height: 350px;
+	width: inherit;/*Применяем ширину родительского контейнера*/
+	margin-bottom: 10px;
+}
+
+.grid-item p {
+	font-family: 'Exo 2';
+	padding: 20px;
+	color: white;
+	text-align: justify;
+}
+
+.grid-item h2{
+	font-family: 'Exo 2';
+	text-align: center;
+	color:#c7956d;
+}
+
+.grid-item:hover{ /*Эффект при наведении мышкой на контейнер*/
+	opacity: 70%; /*Прозрачность*/
+	width: 300px; /*Можно увеличить/уменьшить ширину контейнера и тд*/
+}
+
+.grid-item a, .form-container a{
+	text-decoration: none; /*Убираем изначальные стили ссылки*/
+	display: block;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin: 0 auto; /*По центру*/
+	background-color: #c7956d; /*Цвет фона кнопки*/
+	padding: 14px; /*внутренние отступы*/
+	width: 150px; /*Ширина кнопки*/
+	border-radius:  16px; /*Закругленные края*/
+
+	text-align: center; /*Текст по центру*/
+	font-family: 'Exo 2'; /*Шрифт*/
+	color: white; /*Цвет текста кнопки*/
+	letter-spacing: 2px; /*Промежутки между буквами*/
+	margin-bottom: 20px; /*Отступ снизу*/
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); /*Тень*/
+}
+
+.grid-item a:hover{
+	border-bottom: white 3px dotted;
+	color: white;
+}
+
+/*-----------------------FOOTER*/
+.footer{
+	height: 50px;/*Высота блока*/
+	margin-top: 35px; /*Отступ сверху*/
+	color: white; /*Цвет текста*/
+	background-color: #c7956d; /*Цвет фона контейнера div*/
+	padding: 25px; /*Внутренние отступы*/
+	text-align: center; /*Расположение текста в контейнере - по цетру*/
+}
+
+.footer p{
+	font-family: 'Exo 2';
+}

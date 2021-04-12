@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,100&display=swap')
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #e8e8e8;
+	font-family: 'Exo 2';
+	background-color: #808080;
+}
+
+.container{
+	width: 70%;
+	margin: auto; /*Размещаем div по центру*/
+	background-color: white;
+	margin-top: 5px; /*Отступ сверху*/
+	border-radius: 25px; /*Скругленные края*/
+	box-shadow: #cdc9c3 1px 1px 2px;
+	padding: 30px;
+}
+
+.header{
+	font-family: 'Exo 2';
+	height: 450px;
+	background-image: url(../img/);
+	background-size: cover; /*Размер картинки*/
+	background-repeat: no-repeat; /*Повторение картинки*/
+}
+
+
+.headerklass{
+	height: 1070px;
+	background-image: url(../img/klass.png);
+	background-size: ; /*Размер картинки*/
+	background-repeat: no-repeat; /*Повторение картинки*/
+}
+
+.headerklass p{
+	font-family: 'Exo 2';
+	text-align: left;
+	padding-left: 62%;
+	font-size: 28px;
+	text-shadow: #e8e8e8 3px 2px 3px; /*Тень*/
+}
+
+.header-h1{
+	font-family: 'Exo 2';
+	text-align: center; /*По центру*/
+	font-size: 35px; /*Размер шрифта*/
+	letter-spacing: 10px; /*Расстояние между буквами*/
+	padding-top: 150px; /*Отступ сверху*/
+	text-shadow: white 1px 1px 3px; /*Тень*/
+}
+
+ul{
+	text-align: center; /*По центру*/
+	padding-top: 30px; /*Отступы*/
+	padding-bottom: 30px;
+	background-color: #f4f4f2; /*Цвет фона*/
+}
+
+li{
+	display: inline-block;
+	margin-left: 50px;
+}
+
+li a{
+	text-decoration: none;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+li a:hover{
+	border-bottom: white 3px dotted;
+	color: white;
+}
+
+.content{
+	font-family: 'Exo 2';
+	padding: 55px;
+	text-align: justify; /*Ровный текст со всех сторон*/
+}
+
+img{
+	height: 250px;
+	float: left; /*Обтекание текстом*/
+	margin: 25px; /*Отступ*/
+	box-shadow: #e8e8e8 3px 2px 3px; /*Тень*/
+}
+
+h2{
+	font-size: 28px;
+	text-shadow: #e8e8e8 3px 2px 3px; /*Тень*/
+}
+input, textarea{ /*Убираем все изначальные стили элементов*/
+	border: none;
+	background: none;
+	outline: none;
+	padding: 0;
+}
+
+input[type="text"], input[type="password"]{
+	width: 50%;
+	background-color: #c7956d;
+	height: 20px;
+	border-bottom: 1px solid #6c757d; /*Рамка снизу*/
+	margin-bottom: 1px;
+	margin-top: 4px; /*Отступ сверху*/
+}
+
+textarea{
+	resize: none; /*Отключаем изменения размера*/
+	height: 50px; /*Размер*/
+	width: 50%; /*Ширина*/
+	background-color: #f8f9fa; /*Цвет фона*/
+	border-bottom: 1px solid #6c757d; /*Рамка снизу*/
+}
+
+input:focus, textarea:focus{ /*Стилизуем элемент, который находится в активном состоянии*/
+	background-color: #839b97; /*Цвет фона*/
+}
+
+.checkbox{
+	margin-top: 12px; /*Внешние отступы от контейнера с checkbox*/
+	margin-bottom: 12px;
+}
+
+.checkbox label{
+	margin-right: 25px; /*Отступ справа*/
+}
+
+.select{
+	float: right; /*Расположение - по правому краю*/
+	margin-right: 230px; /*Отступ спарва*/
+}
+
+a{
+	text-align: center; /*Текст в кнопке распологаем по центру*/
+	text-decoration: none; /*Убираем изначальные стили сыллки*/
+	padding: 10px;
+	background-color: #c7956d; /*Цвет фона*/
+	color: white; /*Цвет текста*/
+	border-radius: 5px; /*Скругленные края*/
+	box-shadow: #cdc9c3 1px 1px 2px; /*Тень*/
+	width: 150px; /*Ширина кнопки*/
+	float: right; /*Расположение по правому краю*/
+	margin-right: 12px;
+}
+
+.reset{
+	text-align: center; /*Текст в кнопке распологаем по центру*/
+	background-color: #34626c; /*Цвет фона*/
+	color: white; /*Цвет текста*/
+	border-radius: 5px; /*Скругленные края*/
+	box-shadow: #cdc9c3 1px 1px 2px; /*Тень*/
+	width: 120px; /*Ширина кнопки*/
+	height: 50px;
+	float: right;
+	margin-right: 20px;
+}
+
+.buttons{ /*Отступы от контейнера с кнопками*/
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
